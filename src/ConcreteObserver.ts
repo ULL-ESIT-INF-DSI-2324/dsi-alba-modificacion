@@ -1,7 +1,6 @@
 import { Observer } from './Observer.js';
 import { Event } from './Event.js';
 
-
 /**
  * Clase concreta de observador 
  * Contiene un metodo que se encarga de recibir un evento
@@ -16,7 +15,7 @@ export class ConcreteObserver<T> implements Observer<T> {
    * @param name nombre del observador
    */
   constructor(private id: number, private name: string) {}
-
+  
   /**
    * Método que se encarga de recibir un evento
    * Para ello, lo que hace es imprimir en consola el evento que recibió
